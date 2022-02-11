@@ -1,1 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.110.130.104:3306/boot_unit?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: Li##199598
 
