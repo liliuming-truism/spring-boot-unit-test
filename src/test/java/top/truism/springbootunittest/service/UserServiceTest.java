@@ -11,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import top.truism.springbootunittest.dao.UserRepository;
 import top.truism.springbootunittest.dto.UserDTO;
+import top.truism.springbootunittest.dubbo.provider.service.UserService;
 import top.truism.springbootunittest.entity.User;
 
 import javax.annotation.Resource;
@@ -38,8 +39,6 @@ public class UserServiceTest {
         Matchers.equalTo(1L).matches(userService.addUser(userDTO));
     }
 
-    private void initDbBeforeTest() {
 
-    }
 
 }

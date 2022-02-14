@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.truism.springbootunittest.common.CommonResponse;
 import top.truism.springbootunittest.dto.UserDTO;
-import top.truism.springbootunittest.service.UserService;
+import top.truism.springbootunittest.dubbo.provider.service.UserService;
 import top.truism.springbootunittest.vo.UserVo;
 
 import javax.annotation.Resource;

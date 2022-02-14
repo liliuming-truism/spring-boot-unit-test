@@ -1,12 +1,11 @@
-package top.truism.springbootunittest.service.impl;
+package top.truism.springbootunittest.dubbo.provider.service.impl;
 
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
-import org.springframework.stereotype.Service;
 import top.truism.springbootunittest.dao.UserRepository;
 import top.truism.springbootunittest.dto.UserDTO;
 import top.truism.springbootunittest.entity.User;
-import top.truism.springbootunittest.service.UserService;
+import top.truism.springbootunittest.dubbo.provider.service.UserService;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;

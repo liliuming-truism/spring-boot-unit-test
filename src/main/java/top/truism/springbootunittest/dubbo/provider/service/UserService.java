@@ -1,4 +1,4 @@
-package top.truism.springbootunittest.service;
+package top.truism.springbootunittest.dubbo.provider.service;
 
 import top.truism.springbootunittest.dto.UserDTO;
 
