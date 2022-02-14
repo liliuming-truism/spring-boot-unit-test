@@ -4,3 +4,13 @@ spring:
     username: root
     password: Li##199598
 
+dubbo:
+  application:
+    name: unit-application
+  registry:
+    id: zk-registry
+    address: zookeeper://47.110.130.104:2181
+  config-center:
+    address: zookeeper://47.110.130.104:2181
+  metadata-report:
+    address: zookeeper://47.110.130.104:2181

@@ -1,5 +1,6 @@
 package top.truism.springbootunittest.service.impl;
 
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import top.truism.springbootunittest.dao.UserRepository;
@@ -12,17 +13,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Service("userService")
+@DubboService(interfaceName = "userService")
 public class UserServiceImpl implements UserService {
 
     @Resource
     private UserRepository userRepository;
 
     @Override
-    public void addUser(UserDTO userDTO) {
+    public Long addUser(UserDTO userDTO) {
         User user = new User();
         BeanUtils.copyProperties(userDTO, user);
-        userRepository.save(user);
+        return userRepository.save(user).getId();
     }
 
     @Override

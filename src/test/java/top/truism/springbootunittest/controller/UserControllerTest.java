@@ -13,8 +13,6 @@ import top.truism.springbootunittest.entity.User;
 import top.truism.springbootunittest.vo.UserVo;
 
 import javax.annotation.Resource;
-import java.util.List;
-import java.util.function.Function;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
